@@ -1,3 +1,7 @@
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ubik60/laats-xeus-octave.git/main)
+
+---------------------------------------
+
 .. image:: docs/source/xeus-octave-logo.svg
    :alt: Xeus Octave
 
