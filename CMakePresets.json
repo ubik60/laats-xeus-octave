@@ -1,0 +1,41 @@
+{
+  "version": 2,
+  "buildPresets": [
+    {
+      "configurePreset": "conda-debug",
+      "name": "conda-debug"
+    }
+  ],
+  "configurePresets": [
+    {
+      "binaryDir": "${sourceDir}/build/cmake/${presetName}",
+      "cacheVariables": {
+        "CMAKE_CXX_COMPILER_LAUNCHER": "ccache",
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
+        "CMAKE_INSTALL_PREFIX": "$env{CONDA_PREFIX}",
+        "CMAKE_PREFIX_PATH": "$env{CONDA_PREFIX}"
+      },
+      "description": "Dev base profile using conda libraries",
+      "displayName": "Conda Dev",
+      "generator": "Unix Makefiles",
+      "hidden": true,
+      "name": "conda-dev",
+      "warnings": {
+        "dev": true,
+        "uninitialized": true,
+        "unusedCli": true
+      }
+    },
+    {
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug"
+      },
+      "description": "A debug build using conda libraries",
+      "displayName": "Conda Debug",
+      "inherits": [
+        "conda-dev"
+      ],
+      "name": "conda-debug"
+    }
+  ]
+}

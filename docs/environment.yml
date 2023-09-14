@@ -1,0 +1,7 @@
+name: xeus-octave-docs
+
+channels:
+  - conda-forge
+
+dependencies:
+  - breathe
