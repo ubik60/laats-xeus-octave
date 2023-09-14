@@ -1,4 +1,4 @@
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ubik60/laats-xeus-octave.git/main)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ubik60/laats-xeus-octave.git/main)]
 
 ---------------------------------------
 
